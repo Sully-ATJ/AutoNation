@@ -1,0 +1,335 @@
+*{
+    box-sizing: border-box;
+}
+
+html,body{
+    margin:0;
+    padding:0;
+}
+
+body{
+    height:100vh;
+    width:100vw;
+    display: block;
+    font-family: sans-serif;
+}
+
+/*-----------------hero section--------------------*/
+.video-container{
+    position:absolute;
+    width:100%;
+    height:100vh;
+    overflow:hidden;
+}
+
+video{
+    object-fit:cover;
+    width:100vw;
+    height:100vh;
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+
+/*-----------------------------nav-----------------------------*/
+
+.nav{
+    width:100%;
+    height:80px;
+    margin-top: 15px;
+    position:fixed;
+    z-index:2;
+    display: inline-flex;
+    color:#908579;
+    text-transform: uppercase;
+}
+
+.nav.scrolled{
+    background: #161616 !important;
+    transition: background-color 500ms linear;
+}
+
+.nav h1{
+    margin-left: 15px;
+    margin-top: 10px;;
+}
+
+.nav ul{
+    float:left;
+    right: 40px;
+    position: fixed;
+}
+
+.nav ul li{
+    display:inline-block;
+    position: relative;
+}
+
+.nav ul li:not(:first-child){
+    margin-left: 48px;
+}
+
+.nav ul li:last-child{
+    margin-right: 24px;
+}
+
+.nav ul li a{
+    outline:none;
+    text-decoration: none;
+    letter-spacing: 1.2px;
+    color:#908579;
+}
+
+/*----------------------------- about section -----------------------------*/
+
+.content{
+    position: absolute;
+    margin-top:100vh;
+    width:100%;
+}
+
+.section-data{
+    padding: 140px 0;
+}
+
+.section-index{
+    color: slategray;
+    font-size: 24px;
+}
+
+.section-heading{
+    color:slategray;
+    letter-spacing: 4px;
+    font-size: 24px;
+}
+
+.section-info{
+    font-size:18px;
+    color:slategray;
+}
+
+.more{
+    margin:40px 0;
+}
+
+button{
+    background:none;
+    border:.3pt solid rgba(184,140,0.7);
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+    padding: 18px 36px;
+}
+
+/*----------------------------- services start here -----------------------------*/
+
+#services{
+    background: #161616;
+}
+/*----------------------------- services end here-----------------------------*/
+
+/*----------------------------- contact starts here-----------------------------*/
+#contact-form {
+    margin: 5% 0;
+}
+
+.contact .icon-title {
+    margin-top: 10px;
+    color: #000;
+}
+
+#contact-form ul {
+    list-style: none;
+    margin-bottom: 40px;
+    border-radius: 0;
+}
+
+#contact-form li:last-of-type {
+    border-bottom: none;
+}
+
+#contact-form label {
+    display: block;
+    font-size: 22px;
+    color: rgb(97, 97, 97);
+}
+
+#contact-form input, #contact-form textarea {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    resize: vertical;
+    background: transparent;
+    color: #101010;
+    font-weight: bolder;
+}
+
+input:focus {
+    outline: none !important;
+    border: none !important;
+}
+
+textarea:focus {
+    outline: none !important;
+    border: none !important;
+}
+
+.textarea {
+    border-bottom: 1px solid #c9c9c9;
+}
+/*----------------------------- contact ends here-----------------------------*/
+
+/*----------------------------- footer starts here-----------------------------*/
+.footer {
+    background: #161616;
+}
+
+#media, #address, #mail {
+    text-align: center !important;
+}
+
+.footer .container {
+    padding: 160px 0;
+}
+
+.footer li, p, h4 {
+    font-size: 24px !important;
+}
+
+.footer h4 {
+    font-weight: lighter;
+    color: #fff;
+}
+
+.footer p {
+    color: grey;
+    font-weight: lighter;
+}
+
+.footer li {
+    font-weight: lighter;
+    color: #fff;
+    padding-left: 20px;
+    font-size: 18px !important;
+}
+
+#media ul {
+    list-style: none;
+}
+
+#media ul li {
+    display: inline-block;
+}
+
+/*----------------------------- footer ends here-----------------------------*/
+
+/*----------------------------- login.php starts here-----------------------------*/
+
+.login-form{
+    position: absolute;
+    top: 35%;
+    left: 45%;
+}
+
+.login-form input{
+    display: block;
+    margin: 20px 0 20px 0;
+    width:160px;
+}
+label{
+    float:left;
+    text-align:right;
+    margin-right: 15px;
+}
+/*----------------------------- login.php ends here-----------------------------*/
+
+/*----------------------------- worker.php starts here-----------------------------*/
+
+.main{
+    display: block;
+    width: 100%;
+    position: absolute;
+    top:20%;
+    height: 80vh;
+}
+.main-content{
+    width:100%;
+    display:flex;
+}
+
+#repair-form ul {
+    list-style: none;
+    margin-bottom: 40px;
+    border-radius: 0;
+}
+
+#repair-form li:last-of-type {
+    border-bottom: none;
+}
+
+#repair-form label {
+    display: block;
+    font-size: 22px;
+    color: rgb(97, 97, 97);
+}
+
+#repair-form input, #repair-form textarea {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    resize: vertical;
+    background: transparent;
+    color: #101010;
+    font-weight: bolder;
+}
+
+
+.work{
+    width:30%;
+    position:relative;
+    padding-left:30px;
+    /*background: tomato;*/
+    overflow-y: scroll;
+    border-right: 1px solid #161616;
+    height: 100%;
+}
+.work h3{
+    margin-left:-20px;
+}
+
+.repair-entry{
+    width:80%;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #161616;
+}
+
+.search-data{
+    position: relative;
+    width:70%;
+    /*background: teal;*/
+    padding-left:10%;
+    overflow-y: scroll;
+}
+
+.querybox{
+    width:75%;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #161616;
+}
+/*----------------------------- worker.php ends here-----------------------------*/
+
+/*----------------------------- client.php ends here-----------------------------*/
+
+.repair-updates{
+    position: absolute;
+    top:20%;
+    width:100vw;
+    height:80vh;
+    display:block;
+    background: burlywood;
+    overflow-x: hidden;
+}
+
+
+/*----------------------------- client.php ends here-----------------------------*/

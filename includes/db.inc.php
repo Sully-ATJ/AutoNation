@@ -1,8 +1,8 @@
 <?php
-    $serverName = "127.0.0.1";
-    $dbuserName = "root";
-    $dbPwd = "1234567890";
-    $dbName = "autonation";
+    $serverName = "serverName";
+    $dbuserName = "userName4DB";
+    $dbPwd = "pwd4DB";
+    $dbName = "nameOfDB";
 
     $conn = mysqli_connect($serverName,$dbuserName,$dbPwd,$dbName);
 
